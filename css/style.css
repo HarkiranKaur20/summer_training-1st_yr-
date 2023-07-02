@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#navbar{
+    align-items: center;
+    display: flex;
+    position: sticky;
+    top:0px;
+   /* background-color: #ff914d ;*/
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    background-color: #ff914d;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+#logo{
+    margin: 0 ;
+}
+#logo img{
+    height:90px;
+    margin: 5px 25px 5px 5px;
+}
+#navbar ul{
+    display: flex;
+    /*justify-content: center;*/
+   /* padding: 20px 0;   */
+
+}
+#navbar ul li{
+    list-style-type: none;
+    font-size: 1.3rem;
+    padding: 20px 0;
+
+}
+#navbar ul li a{
+    display: block;
+    padding: 5px ;
+    text-decoration: none;
+    color:  #f6e7ac;
+}
+#navbar ul li a:hover{
+    background-color:#f6e7ac;
+    color: #ff914d;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:5px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 4px solid #ff914d;
+   
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('../bg.jpg') no-repeat center center/cover;
+    height: 642px;
+    top:100px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.8;
+}
+
+#home h1{
+    color:rebeccapurple;
+    text-align: center;
+    font-family: initial;
+    text-shadow:2px 2px ;
+    font-size: 3rem;
+    padding-bottom: 1.2rem;
+}
+
+#home p{
+    color:#f6e7ac;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#services{
+    margin: 34px;
+    display: flex;
+    border-bottom: 4px solid #ff914d;
+
+}
+#services-container{
+    background-color: #f6e7ac;
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: initial;
+
+} 
+
+#contact{
+   /* position: relative;*/
+    background-color: gray;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: initial;
+
+}
+
+
+footer{
+    background: #ff914d;
+    color: #f6e7ac;
+    padding: 9px 20px;
+}
+
+.primaryh{
+    font-family: initial;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.secondaryh{
+    font-family: initial;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.button{
+    padding: 3px;
+    border: 2px solid white;
+    background-color: grey;
+    color: white;
+    margin: 12px 17px 5px;
+    font-size: 1.5rem;
+    font-family: initial;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+p{
+    padding: 0.2rem;
+}
+
+.center{
+    text-align: center;
+}
+form button{
+    font-size: 1.2rem;
+   padding: 5px;
+   cursor: pointer;
+}
+
